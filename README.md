@@ -3,11 +3,6 @@
 <!-- ANIMATED HERO BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f1218,50:1a2040,100:0f1218&height=200&section=header&text=DaveTV&fontSize=80&fontColor=77a7ff&fontAlignY=38&desc=Samsung%20Smart%20TV%20%C2%B7%20Windows%20%C2%B7%20Web&descAlignY=60&descSize=20&descColor=56d2f1&animation=fadeIn" width="100%"/>
 
-<!-- ANIMATED LOGO -->
-<img src="images/davetv-logo.png" width="420" alt="DaveTV"/>
-
-<br/>
-
 <!-- TYPING ANIMATION via readme-typing-svg -->
 <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=22&duration=3000&pause=800&color=77A7FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Live+TV+%C2%B7+Movies+%C2%B7+Series+%C2%B7+Sports;Samsung+Tizen+%7C+Windows+%7C+Web;M3U+%C2%B7+Xtream+Codes+%C2%B7+XMLTV+EPG" alt="DaveTV Typing"/>
 
@@ -40,7 +35,7 @@
 ## 🎯 What is DaveTV?
 
 > **DaveTV** is a fully-featured IPTV media centre built for Samsung Smart TVs (Tizen OS), Windows and Web.  
-> Forked from DaveTV and rebranded end-to-end — every string, icon, package ID and asset is DaveTV.
+> Rebranded from IPTV Player Zero — every string, icon, package ID and asset carries the DaveTV identity end-to-end.
 
 ```
 📺  Samsung Smart TV  ─── Tizen Web App (.wgt) ─── AVPlay native video
