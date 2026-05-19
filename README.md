@@ -110,6 +110,18 @@
 ## 🚀 Install on Samsung TV
 
 ### Step 1 — Enable Developer Mode
+
+**2025 / 2024 Samsung TVs (CU / DU / QN series — One Remote with `123` button):**
+```
+1. Press Home → go to Apps
+2. Scroll to the bottom of the Apps screen → select "App Settings"
+3. Press the 123... button on the One Remote (virtual number pad appears)
+4. Type: 1 2 3 4 5  then press the ✓ checkmark button
+5. "Developer Mode" popup appears → toggle ON
+6. Enter your PC's IP address → OK → TV reboots
+```
+
+**2023 and older Samsung TVs:**
 ```
 Remote → Settings → Support → About Smart TV
 Type: 12345  →  Enable Developer Mode  →  Enter PC IP  →  OK  →  Reboot
