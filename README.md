@@ -40,7 +40,7 @@
 ## 🎯 What is DaveTV?
 
 > **DaveTV** is a fully-featured IPTV media centre built for Samsung Smart TVs (Tizen OS), Windows and Web.  
-> Forked from IPTV Player Zero and rebranded end-to-end — every string, icon, package ID and asset is DaveTV.
+> Forked from DaveTV and rebranded end-to-end — every string, icon, package ID and asset is DaveTV.
 
 ```
 📺  Samsung Smart TV  ─── Tizen Web App (.wgt) ─── AVPlay native video

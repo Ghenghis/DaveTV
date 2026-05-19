@@ -5,7 +5,7 @@
 (function (window) {
   'use strict';
 
-  const DB_NAME = 'iptvPlayerZero';
+  const DB_NAME = 'davetv';
   const DB_VERSION = 1;
 
   let _db = null;
