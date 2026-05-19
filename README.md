@@ -11,9 +11,9 @@ Live TV, Movies, Series and EPG — all from your M3U or Xtream Codes subscripti
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Version](https://img.shields.io/badge/Version-1.0.0-77a7ff?style=for-the-badge)](https://github.com/Ghenghis/DaveTV)
 [![License](https://img.shields.io/badge/License-MIT-56d2f1?style=for-the-badge)](LICENSE)
-[![WGT](https://img.shields.io/badge/Package-.wgt-a259ff?style=for-the-badge)](../../raw/main/davetv.wgt)
+[![WGT](https://img.shields.io/badge/Package-.wgt-a259ff?style=for-the-badge)](https://ghenghis.github.io/DaveTV/davetv.wgt)
 
-🌐 **[View Project Page](https://ghenghis.github.io/DaveTV/)** &nbsp;·&nbsp; 📦 **[Download davetv.wgt](../../raw/main/davetv.wgt)** &nbsp;·&nbsp; 📖 **[Install Guide](#installation)**
+🌐 **[View Project Page](https://ghenghis.github.io/DaveTV/)** &nbsp;·&nbsp; 📦 **[Download davetv.wgt](https://ghenghis.github.io/DaveTV/davetv.wgt)** &nbsp;·&nbsp; 📖 **[Install Guide](#installation)**
 
 </div>
 
