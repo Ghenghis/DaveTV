@@ -54,11 +54,11 @@
 
 <div align="center">
 
-| 📡 Live TV | 📅 TV Guide | 🎬 Movies | 📺 Series | 🎮 Remote | 🗄️ Storage |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| M3U · Xtream | XMLTV EPG | VOD | Episodes | D-Pad | IndexedDB |
-| Group filter | 7-day grid | Watchlist | Progress | Media keys | Offline |
-| Search | Auto-match | Continue | Seasons | Spatial nav | Persistent |
+|  📡 Live TV   | 📅 TV Guide | 🎬 Movies  | 📺 Series |  🎮 Remote   | 🗄️ Storage  |
+| :----------: | :--------: | :-------: | :------: | :---------: | :--------: |
+| M3U · Xtream | XMLTV EPG  |    VOD    | Episodes |    D-Pad    | IndexedDB  |
+| Group filter | 7-day grid | Watchlist | Progress | Media keys  |  Offline   |
+|    Search    | Auto-match | Continue  | Seasons  | Spatial nav | Persistent |
 
 </div>
 
@@ -68,12 +68,12 @@
 
 <div align="center">
 
-| Platform | Download | Size | Notes |
-|:---:|:---|:---:|:---|
-| 📺 **Samsung TV** | [DaveTV-Tizen-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Tizen-1.0.0.zip) | 3.75 MB | Tizen 4.0+ · `.wgt` package |
-| 📺 **Samsung TV (direct)** | [davetv.wgt](https://ghenghis.github.io/DaveTV/davetv.wgt) | 3.75 MB | Direct `.wgt` file |
-| 🖥️ **Windows** | [DaveTV-Windows-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Windows-1.0.0.zip) | 153 MB | Windows 10/11 installer |
-| 🌐 **Web / Self-host** | [DaveTV-Web-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Web-1.0.0.zip) | 3.5 MB | Static SPA, any web server |
+|         Platform          | Download                                                                                                         |  Size   | Notes                       |
+| :-----------------------: | :--------------------------------------------------------------------------------------------------------------- | :-----: | :-------------------------- |
+|     📺 **Samsung TV**      | [DaveTV-Tizen-1.0.1.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Tizen-1.0.1.zip)     | 3.75 MB | Tizen 4.0+ · `.wgt` package |
+| 📺 **Samsung TV (direct)** | [davetv.wgt](https://ghenghis.github.io/DaveTV/davetv.wgt)                                                       | 3.75 MB | Direct `.wgt` file          |
+|       🖥️ **Windows**       | [DaveTV-Windows-1.0.1.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Windows-1.0.1.zip) | 153 MB  | Windows 10/11 installer     |
+|   🌐 **Web / Self-host**   | [DaveTV-Web-1.0.1.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Web-1.0.1.zip)         | 3.5 MB  | Static SPA, any web server  |
 
 </div>
 
@@ -182,13 +182,13 @@ davetv-app/
 
 ## 🐛 Troubleshooting
 
-| Problem | Fix |
-|---------|-----|
-| White screen | `sdb.exe dlog \| findstr DaveTV` — verify shims load before React |
-| `sdb connect` refused | TV + PC on same WiFi; re-enter PC IP in Developer Mode |
-| No channels | M3U URL must be reachable from TV network |
-| Remote not working | Verify `hw-key-event=true` in `config.xml` |
-| AVPlay missing | Only available on real Samsung TV hardware |
+| Problem               | Fix                                                               |
+| --------------------- | ----------------------------------------------------------------- |
+| White screen          | `sdb.exe dlog \| findstr DaveTV` — verify shims load before React |
+| `sdb connect` refused | TV + PC on same WiFi; re-enter PC IP in Developer Mode            |
+| No channels           | M3U URL must be reachable from TV network                         |
+| Remote not working    | Verify `hw-key-event=true` in `config.xml`                        |
+| AVPlay missing        | Only available on real Samsung TV hardware                        |
 
 ```cmd
 # View live TV logs
@@ -199,11 +199,11 @@ sdb.exe -s <TV_IP>:26101 dlog | findstr "DaveTV"
 
 ## 📺 Supported Devices
 
-| Model | Series | Tizen | Status |
-|-------|--------|-------|--------|
-| QN85Q7FAAFXZA | 85" QLED Q7 | 4.0 | ✅ Tested |
-| QN95Q7FAAFXZA | 95" QLED Q7 | 4.0 | ✅ Tested |
-| All Samsung 2016+ | Any | 3.0+ | ✅ Supported |
+| Model             | Series      | Tizen | Status      |
+| ----------------- | ----------- | ----- | ----------- |
+| QN85Q7FAAFXZA     | 85" QLED Q7 | 4.0   | ✅ Tested    |
+| QN95Q7FAAFXZA     | 95" QLED Q7 | 4.0   | ✅ Tested    |
+| All Samsung 2016+ | Any         | 3.0+  | ✅ Supported |
 
 ---
 
