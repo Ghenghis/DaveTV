@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="http://com.davetv.app"
+        version="1.0.0"
+        viewmodes="fullscreen">
+
+    <tizen:application id="DaveTV.DaveTV"
+                       package="DaveTV"
+                       required_version="4.0"/>
+
+    <content src="index.html"/>
+
+    <!-- Network access -->
+    <feature name="http://tizen.org/feature/network.internet"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+
+    <!-- Privileges -->
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediakey"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.display"/>
+    <tizen:privilege name="http://tizen.org/privilege/avplay"/>
+
+    <!-- Allow all external network access -->
+    <access origin="*" subdomains="true"/>
+
+    <tizen:setting screen-orientation="landscape"
+                   context-menu="disable"
+                   background-support="enable"
+                   encryption="disable"
+                   install-location="auto"
+                   hw-key-event="true"
+                   sound-mode="exclusive"/>
+
+    <icon src="images/icon.png"/>
+
+    <name>DaveTV</name>
+    <description>DaveTV — Live TV, Movies, Series and Sports</description>
+
+    <tizen:metadata key="http://samsung.com/tv/metadata/category" value="VOD"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/subtype" value="IPTV"/>
+
+</widget>

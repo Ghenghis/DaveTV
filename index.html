@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080, user-scalable=no" />
+    <title>DaveTV</title>
+
+    <!-- Samsung Tizen WebAPIs — MUST be first -->
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+
+    <style>
+      * { box-sizing: border-box; }
+      html, body, #root {
+        width: 1920px;
+        height: 1080px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      body {
+        overflow: hidden;
+        background:
+          radial-gradient(circle at top left, rgba(90, 130, 255, 0.16), transparent 36%),
+          radial-gradient(circle at bottom right, rgba(65, 190, 220, 0.14), transparent 42%),
+          linear-gradient(180deg, #171b23 0%, #0f1218 100%);
+        color: #eef2f7;
+        font-family:
+          "Segoe UI",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+      }
+
+      /* DaveTV pre-boot loading screen */
+      .ipz-preboot {
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .ipz-preboot::before, .ipz-preboot::after {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(56px);
+        opacity: 0.9;
+        pointer-events: none;
+      }
+      .ipz-preboot::before {
+        left: -120px; top: -120px;
+        height: 360px; width: 360px;
+        background: rgba(119, 92, 255, 0.18);
+      }
+      .ipz-preboot::after {
+        right: -140px; bottom: -140px;
+        height: 420px; width: 420px;
+        background: rgba(62, 181, 240, 0.16);
+      }
+      .ipz-preboot__card {
+        position: relative;
+        z-index: 1;
+        width: min(480px, calc(100vw - 48px));
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 28px;
+        background: rgba(18,21,29,0.80);
+        box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+        backdrop-filter: blur(18px);
+        padding: 36px 36px 30px;
+      }
+      .ipz-preboot__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .ipz-preboot__logo {
+        display: block;
+        height: 56px;
+        width: auto;
+        object-fit: contain;
+        user-select: none;
+      }
+      .ipz-preboot__label {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: #f5f7fb;
+      }
+      .ipz-preboot__subtitle {
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 1.45;
+        color: rgba(225,231,240,0.60);
+        letter-spacing: 0.02em;
+      }
+      .ipz-preboot__progress { margin-top: 24px; width: 100%; }
+      .ipz-preboot__progress-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(214,221,232,0.45);
+      }
+      .ipz-preboot__track {
+        margin-top: 10px;
+        height: 6px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.07);
+      }
+      .ipz-preboot__bar {
+        height: 100%;
+        width: 28%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #77a7ff 0%, #56d2f1 100%);
+        transform-origin: left center;
+        animation: ipz-preboot-load 1.35s ease-in-out infinite alternate;
+      }
+      @keyframes ipz-preboot-load {
+        from { transform: scaleX(0.75); opacity: 0.82; }
+        to   { transform: scaleX(1.22); opacity: 1; }
+      }
+
+      /* DaveTV wordmark in splash */
+      .davetv-wordmark {
+        display: flex;
+        align-items: baseline;
+        gap: 0;
+        font-family: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+        line-height: 1;
+        user-select: none;
+      }
+      .davetv-wordmark__dave {
+        font-size: 42px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        background: linear-gradient(90deg, #77a7ff 0%, #56d2f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .davetv-wordmark__tv {
+        font-size: 42px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        color: rgba(238,242,247,0.85);
+      }
+    </style>
+
+    <!-- Shim layer: MUST load before React bundle -->
+    <script src="js/store.js"></script>
+    <script src="js/player-shim.js"></script>
+    <script src="js/m3u-parser.js"></script>
+    <script src="js/xmltv-parser.js"></script>
+    <script src="js/xtream-client.js"></script>
+    <script src="js/tauri-shim.js"></script>
+    <script src="js/remote-keys.js"></script>
+
+    <!-- App CSS (extracted from original binary) -->
+    <link rel="stylesheet" href="css/index-C3DkTtkp.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- DaveTV pre-boot splash -->
+      <div class="ipz-preboot" role="status" aria-live="polite" aria-label="Loading DaveTV">
+        <div class="ipz-preboot__card">
+          <div class="ipz-preboot__content">
+
+            <!-- DaveTV wordmark (no image dependency) -->
+            <div class="davetv-wordmark">
+              <span class="davetv-wordmark__dave">Dave</span>
+              <span class="davetv-wordmark__tv">TV</span>
+            </div>
+
+            <div class="ipz-preboot__label">Loading</div>
+            <div class="ipz-preboot__subtitle">Starting DaveTV &nbsp;·&nbsp; Live · Movies · Series</div>
+            <div class="ipz-preboot__progress" aria-hidden="true">
+              <div class="ipz-preboot__progress-head">
+                <span>Starting</span>
+                <span>Please wait</span>
+              </div>
+              <div class="ipz-preboot__track">
+                <div class="ipz-preboot__bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Original React bundle (brand-patched) -->
+    <script type="module" crossorigin src="assets/index-CXuONclM.js"></script>
+  </body>
+</html>

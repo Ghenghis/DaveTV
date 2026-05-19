@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1218;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#171b23;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#77a7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#56d2f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tvGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#77a7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#56d2f1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background pill -->
+  <rect width="480" height="120" rx="24" fill="url(#bgGrad)"/>
+  <rect width="480" height="120" rx="24" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- TV icon -->
+  <g transform="translate(22, 18)" filter="url(#glow)">
+    <!-- TV screen body -->
+    <rect x="0" y="0" width="68" height="52" rx="8" fill="none" stroke="url(#tvGrad)" stroke-width="3"/>
+    <!-- TV screen inner -->
+    <rect x="7" y="7" width="54" height="38" rx="4" fill="rgba(119,167,255,0.12)"/>
+    <!-- Play triangle inside screen -->
+    <polygon points="24,15 24,37 48,26" fill="url(#tvGrad)" opacity="0.9"/>
+    <!-- TV stand -->
+    <line x1="34" y1="52" x2="34" y2="66" stroke="url(#tvGrad)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="20" y1="66" x2="48" y2="66" stroke="url(#tvGrad)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- DAVE text -->
+  <text x="112" y="68"
+        font-family="'Segoe UI', ui-sans-serif, system-ui, sans-serif"
+        font-size="58"
+        font-weight="800"
+        letter-spacing="-2"
+        fill="url(#textGrad)"
+        filter="url(#glow)">DAVE</text>
+
+  <!-- TV text (smaller, shifted right) -->
+  <text x="320" y="68"
+        font-family="'Segoe UI', ui-sans-serif, system-ui, sans-serif"
+        font-size="58"
+        font-weight="300"
+        letter-spacing="-1"
+        fill="#eef2f7"
+        opacity="0.85">TV</text>
+
+  <!-- Tagline -->
+  <text x="112" y="95"
+        font-family="'Segoe UI', ui-sans-serif, system-ui, sans-serif"
+        font-size="14"
+        font-weight="400"
+        letter-spacing="3"
+        fill="rgba(214,221,232,0.5)"
+        text-transform="uppercase">LIVE · MOVIES · SERIES</text>
+</svg>
