@@ -1,183 +1,182 @@
 <div align="center">
 
-<img src="images/davetv-logo.png" alt="DaveTV Logo" width="480"/>
+<!-- ANIMATED HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f1218,50:1a2040,100:0f1218&height=200&section=header&text=DaveTV&fontSize=80&fontColor=77a7ff&fontAlignY=38&desc=Samsung%20Smart%20TV%20%C2%B7%20Windows%20%C2%B7%20Web&descAlignY=60&descSize=20&descColor=56d2f1&animation=fadeIn" width="100%"/>
+
+<!-- ANIMATED LOGO -->
+<img src="images/davetv-logo.png" width="420" alt="DaveTV"/>
+
+<br/>
+
+<!-- TYPING ANIMATION via readme-typing-svg -->
+<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=22&duration=3000&pause=800&color=77A7FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Live+TV+%C2%B7+Movies+%C2%B7+Series+%C2%B7+Sports;Samsung+Tizen+%7C+Windows+%7C+Web;M3U+%C2%B7+Xtream+Codes+%C2%B7+XMLTV+EPG" alt="DaveTV Typing"/>
 
 <br/><br/>
 
-**DaveTV** is a fully-featured IPTV player for Samsung Smart TVs (Tizen OS).  
-Live TV, Movies, Series and EPG — all from your M3U or Xtream Codes subscription.
+<!-- BADGES ROW 1 -->
+[![Release](https://img.shields.io/github/v/release/Ghenghis/DaveTV?style=for-the-badge&color=77a7ff&logo=github&logoColor=white&label=Latest%20Release)](https://github.com/Ghenghis/DaveTV/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Ghenghis/DaveTV/total?style=for-the-badge&color=56d2f1&logo=download&logoColor=white)](https://github.com/Ghenghis/DaveTV/releases)
+[![Stars](https://img.shields.io/github/stars/Ghenghis/DaveTV?style=for-the-badge&color=a259ff&logo=star&logoColor=white)](https://github.com/Ghenghis/DaveTV/stargazers)
 
+<!-- BADGES ROW 2 -->
 [![Tizen](https://img.shields.io/badge/Tizen-4.0%2B-1428A0?style=for-the-badge&logo=samsung&logoColor=white)](https://developer.samsung.com/smarttv)
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Ghenghis/DaveTV/releases)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
-[![Version](https://img.shields.io/badge/Version-1.0.0-77a7ff?style=for-the-badge)](https://github.com/Ghenghis/DaveTV)
 [![License](https://img.shields.io/badge/License-MIT-56d2f1?style=for-the-badge)](LICENSE)
-[![WGT](https://img.shields.io/badge/Package-.wgt-a259ff?style=for-the-badge)](https://ghenghis.github.io/DaveTV/davetv.wgt)
 
-🌐 **[View Project Page](https://ghenghis.github.io/DaveTV/)** &nbsp;·&nbsp; 📦 **[Download davetv.wgt](https://ghenghis.github.io/DaveTV/davetv.wgt)** &nbsp;·&nbsp; 📖 **[Install Guide](#installation)**
+<br/>
+
+🌐 **[Live Project Page](https://ghenghis.github.io/DaveTV/)** &nbsp;·&nbsp; 📦 **[Download Releases](https://github.com/Ghenghis/DaveTV/releases/latest)** &nbsp;·&nbsp; 📺 **[Tizen Install Guide](#-install-on-samsung-tv)**
 
 </div>
 
 ---
 
+<!-- ACTIVITY GRAPH -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ghenghis&repo=DaveTV&bg_color=0f1218&color=77a7ff&line=56d2f1&point=a259ff&area=true&hide_border=true&area_color=77a7ff" width="100%" alt="Activity Graph"/>
+
+---
+
+## 🎯 What is DaveTV?
+
+> **DaveTV** is a fully-featured IPTV media centre built for Samsung Smart TVs (Tizen OS), Windows and Web.  
+> Forked from IPTV Player Zero and rebranded end-to-end — every string, icon, package ID and asset is DaveTV.
+
+```
+📺  Samsung Smart TV  ─── Tizen Web App (.wgt) ─── AVPlay native video
+🖥️  Windows 10/11     ─── Native installer (.exe) ── mpv video engine
+🌐  Browser / Server  ─── Static SPA (self-host)  ── HTML5 <video>
+```
+
+---
+
 ## ✨ Features
 
-| | Feature | Description |
-|---|---|---|
-| 📡 | **Live TV** | Thousands of channels via M3U URLs or Xtream Codes. Group filtering, search, favourites. |
-| 📅 | **TV Guide (EPG)** | 7-day electronic programme guide from XMLTV. Auto fuzzy-matches channels. |
-| 🎬 | **Movies (VOD)** | Full Xtream VOD library with categories, posters, watch history and continue-watching. |
-| 📺 | **Series** | TV series with seasons, episodes, per-episode progress tracking and favourites. |
-| 🎮 | **TV Remote** | Full Samsung D-pad + media key support with spatial navigation focus engine. |
-| 🗄️ | **Offline Storage** | IndexedDB — all data stored locally, no external server required. |
+<div align="center">
+
+| 📡 Live TV | 📅 TV Guide | 🎬 Movies | 📺 Series | 🎮 Remote | 🗄️ Storage |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| M3U · Xtream | XMLTV EPG | VOD | Episodes | D-Pad | IndexedDB |
+| Group filter | 7-day grid | Watchlist | Progress | Media keys | Offline |
+| Search | Auto-match | Continue | Seasons | Spatial nav | Persistent |
+
+</div>
+
+---
+
+## 📦 Download
+
+<div align="center">
+
+| Platform | Download | Size | Notes |
+|:---:|:---|:---:|:---|
+| 📺 **Samsung TV** | [DaveTV-Tizen-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Tizen-1.0.0.zip) | 3.75 MB | Tizen 4.0+ · `.wgt` package |
+| 📺 **Samsung TV (direct)** | [davetv.wgt](https://ghenghis.github.io/DaveTV/davetv.wgt) | 3.75 MB | Direct `.wgt` file |
+| 🖥️ **Windows** | [DaveTV-Windows-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Windows-1.0.0.zip) | 153 MB | Windows 10/11 installer |
+| 🌐 **Web / Self-host** | [DaveTV-Web-1.0.0.zip](https://github.com/Ghenghis/DaveTV/releases/latest/download/DaveTV-Web-1.0.0.zip) | 3.5 MB | Static SPA, any web server |
+
+</div>
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                  Samsung Smart TV (Tizen 4.0+)                  │
-│                                                                 │
-│  ┌──────────────────┐    invoke(cmd)    ┌──────────────────┐   │
-│  │   React 18 SPA   │ ─────────────────▶│  Shim Layer      │   │
-│  │  (341KB bundle   │ ◀─────────────── │  tauri-shim.js   │   │
-│  │  + 115 chunks)   │    events/data    │  store.js        │   │
-│  └──────────────────┘                  │  player-shim.js  │   │
-│                                        │  m3u-parser.js   │   │
-│                                        │  xmltv-parser.js │   │
-│                                        │  xtream-client.js│   │
-│                                        │  remote-keys.js  │   │
-│                                        └────────┬─────────┘   │
-│                                                 │              │
-│              ┌──────────────┬──────────────────┼────────────┐ │
-│              ▼              ▼                  ▼            ▼  │
-│         ┌─────────┐  ┌──────────┐  ┌──────────────┐  ┌───────┐│
-│         │ AVPlay  │  │IndexedDB │  │tvinputdevice │  │Audio  ││
-│         │  API    │  │ Storage  │  │  (Remote)    │  │Control││
-│         └─────────┘  └──────────┘  └──────────────┘  └───────┘│
-└─────────────────────────────────────────────────────────────────┘
-         ▲ fetch()
-         │
-┌────────┴──────────────────────┐
-│  M3U Servers · Xtream API     │
-│  XMLTV EPG Sources · CDNs     │
-└───────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                    Samsung Smart TV  (Tizen 4.0+)                   │
+│                                                                     │
+│   ┌──────────────────────┐   invoke(cmd)   ┌─────────────────────┐ │
+│   │    ⚛  React 18 SPA   │ ──────────────▶ │   🔌  Shim Layer    │ │
+│   │   341KB + 115 chunks  │ ◀────────────── │  tauri-shim.js      │ │
+│   │   Tailwind CSS 207KB  │  events / data  │  store.js           │ │
+│   └──────────────────────┘                 │  player-shim.js     │ │
+│                                            │  m3u-parser.js      │ │
+│                                            │  xmltv-parser.js    │ │
+│                                            │  xtream-client.js   │ │
+│                                            │  remote-keys.js     │ │
+│                                            └────────┬────────────┘ │
+│                    ┌────────────┬───────────────────┼────────────┐ │
+│                    ▼            ▼                   ▼            ▼ │
+│              ┌──────────┐ ┌──────────┐ ┌──────────────┐ ┌───────┐ │
+│              │  AVPlay  │ │IndexedDB │ │tvinputdevice │ │ Audio │ │
+│              │  API ▶   │ │🗄 Storage│ │ 🎮 Remote    │ │Control│ │
+│              └──────────┘ └──────────┘ └──────────────┘ └───────┘ │
+└─────────────────────────────────────────────────────────────────────┘
+                    ▲  fetch()  ─────────────────────────────────────
+                    │
+        ┌───────────┴──────────────────────────┐
+        │  🌐  M3U Servers · Xtream API         │
+        │      XMLTV EPG Sources · CDNs         │
+        └──────────────────────────────────────┘
 ```
 
 ---
 
-## 📁 Project Structure
+## 🚀 Install on Samsung TV
 
+### Step 1 — Enable Developer Mode
 ```
-davetv-app/
-├── index.html              ← Entry point + DaveTV splash screen
-├── config.xml              ← Tizen manifest (package: DaveTV.DaveTV)
-│
-├── js/
-│   ├── tauri-shim.js       ← 80+ Tauri IPC commands → Tizen/Web API
-│   ├── store.js            ← IndexedDB (playlists, channels, EPG, history)
-│   ├── player-shim.js      ← AVPlay wrapper (play/pause/seek/volume)
-│   ├── m3u-parser.js       ← M3U/M3U8 playlist parser
-│   ├── xmltv-parser.js     ← XMLTV EPG parser + fuzzy channel matching
-│   ├── xtream-client.js    ← Xtream Codes API client (VOD/Series/Live)
-│   └── remote-keys.js      ← TV D-pad + media keys + spatial navigation
-│
-├── css/
-│   └── index-C3DkTtkp.css  ← Tailwind CSS (207 KB)
-│
-├── assets/
-│   ├── index-CXuONclM.js   ← React 18 main bundle (341 KB)
-│   └── *.js                ← 115 lazy-loaded feature chunks
-│
-├── images/
-│   ├── icon.png             ← App icon 128×128
-│   ├── icon-512.png         ← App icon 512×512
-│   └── davetv-logo.png      ← Splash / README logo
-│
-└── docs/
-    └── index.html           ← Project webpage (GitHub Pages)
+Remote → Settings → Support → About Smart TV
+Type: 12345  →  Enable Developer Mode  →  Enter PC IP  →  OK  →  Reboot
 ```
 
----
-
-## 🚀 Installation
-
-### Prerequisites
-- Samsung Smart TV (Tizen 4.0+, 2016 or newer)
-- Tizen Studio installed on your PC (for `tizen.bat` + `sdb.exe`)
-- TV and PC on the **same WiFi network**
-
-### Step 1 — Enable Developer Mode on TV
-
-1. Press **Home** on remote → **Settings → Support → About Smart TV**
-2. On remote, quickly type: **`12345`**
-3. Toggle **Developer Mode: ON**
-4. Enter **your PC's local IP address** (run `ipconfig` on PC to find it)
-5. Press **OK** → TV reboots with "Developer Mode" banner
-
-### Step 2 — Connect via sdb
-
-```bash
-# sdb.exe location (Tizen Studio)
-C:\Users\<you>\.tizen-extension-platform\server\sdktools\data\tools\sdb.exe
-
-# Connect to TV (replace with your TV's IP)
+### Step 2 — Connect
+```cmd
 sdb.exe connect <TV_IP>:26101
-
-# Verify
 sdb.exe devices
 ```
 
-> **Find TV IP:** Settings → General → Network → Network Status → IP Settings
-
 ### Step 3 — Install
-
-```bash
-tizen.bat install -n "davetv.wgt" -t <DEVICE_ID>
+```cmd
+tizen.bat install -n davetv.wgt -t <DEVICE_ID>
 ```
 
 ### Step 4 — Launch
-
-```bash
+```cmd
 tizen.bat run -p DaveTV.DaveTV -t <DEVICE_ID>
 ```
-
-Or find **DaveTV** under **Apps → My Apps** on the TV.
-
----
-
-## 📋 Supported Sources
-
-| Source | Format | How to Import |
-|--------|--------|---------------|
-| M3U playlist | `.m3u` / `.m3u8` | Paste URL in app |
-| Xtream Codes | API v2 | Host + username + password |
-| XMLTV EPG | `.xml` | Paste URL in EPG settings |
+> Or: **TV Home → Apps → My Apps → DaveTV**
 
 ---
 
-## 📺 Supported Devices
+## 🗂️ Project Structure
 
-| Model | Tizen | Status |
-|-------|-------|--------|
-| QN85Q7FAAFXZA (85" QLED) | 4.0 | ✅ Tested |
-| QN95Q7FAAFXZA (95" QLED) | 4.0 | ✅ Tested |
-| Any Samsung TV 2016+ | 3.0+ | ✅ Supported |
+```
+davetv-app/
+├── 📄 index.html              ← Entry point + DaveTV splash
+├── 📄 config.xml              ← Tizen manifest (DaveTV.DaveTV)
+├── js/
+│   ├── 🔌 tauri-shim.js       ← 80+ Tauri IPC → Tizen/Web API
+│   ├── 🗄️  store.js            ← IndexedDB persistence layer
+│   ├── ▶️  player-shim.js      ← AVPlay wrapper
+│   ├── 📋 m3u-parser.js       ← M3U/M3U8 parser
+│   ├── 📅 xmltv-parser.js     ← XMLTV EPG + fuzzy match
+│   ├── 📡 xtream-client.js    ← Xtream Codes API client
+│   └── 🎮 remote-keys.js      ← TV remote + spatial nav
+├── css/
+│   └── index-C3DkTtkp.css     ← Tailwind CSS (207 KB)
+├── assets/
+│   ├── index-CXuONclM.js      ← React 18 bundle (341 KB)
+│   └── *.js                   ← 115 lazy feature chunks
+└── docs/
+    ├── 🌐 index.html           ← GitHub Pages project site
+    └── 📦 davetv.wgt           ← Tizen package for direct download
+```
 
 ---
 
 ## 🔧 Tech Stack
 
-| Technology | Role |
-|---|---|
-| **React 18** | UI framework (SPA extracted from Tauri binary) |
-| **Tailwind CSS** | Styling (207 KB built bundle) |
-| **tauri-shim.js** | Replaces Rust/Tauri backend with 80+ JS command handlers |
-| **AVPlay API** | Samsung native video player (HLS, TS, MP4) |
-| **IndexedDB** | Browser-native persistence replacing SQLite |
-| **Xtream Codes API** | Live TV, VOD and Series content source |
-| **XMLTV** | Electronic Programme Guide data |
-| **Vite 5** | Original build tool (bundle unmodified) |
+<div align="center">
+
+![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_5-a259ff?style=for-the-badge&logo=vite&logoColor=white)
+![Samsung](https://img.shields.io/badge/Tizen_4.0-1428A0?style=for-the-badge&logo=samsung&logoColor=white)
+![IndexedDB](https://img.shields.io/badge/IndexedDB-56d2f1?style=for-the-badge&logo=databricks&logoColor=white)
+![AVPlay](https://img.shields.io/badge/AVPlay_API-77a7ff?style=for-the-badge&logo=samsung&logoColor=white)
+
+</div>
 
 ---
 
@@ -185,40 +184,28 @@ Or find **DaveTV** under **Apps → My Apps** on the TV.
 
 | Problem | Fix |
 |---------|-----|
-| White screen on load | Check `sdb dlog` — verify shims load before React bundle |
-| `sdb connect` refused | TV + PC must be on same network; re-enter PC IP in Developer Mode |
-| No channels after import | M3U URL must be reachable from TV network (not `localhost`) |
-| AVPlay not found | Only works on real Samsung TV hardware, not browser |
-| Remote keys not working | Verify `config.xml` has `hw-key-event="true"` |
+| White screen | `sdb.exe dlog \| findstr DaveTV` — verify shims load before React |
+| `sdb connect` refused | TV + PC on same WiFi; re-enter PC IP in Developer Mode |
+| No channels | M3U URL must be reachable from TV network |
+| Remote not working | Verify `hw-key-event=true` in `config.xml` |
+| AVPlay missing | Only available on real Samsung TV hardware |
 
-### View Logs
-
-```bash
+```cmd
+# View live TV logs
 sdb.exe -s <TV_IP>:26101 dlog | findstr "DaveTV"
 ```
 
 ---
 
-## 📦 Building the .wgt
+## 📺 Supported Devices
 
-```python
-import zipfile, os
-
-with zipfile.ZipFile('davetv.wgt', 'w', zipfile.ZIP_DEFLATED) as z:
-    for root, dirs, files in os.walk('davetv-app'):
-        dirs[:] = [d for d in dirs if not d.startswith('.')]
-        for f in files:
-            full = os.path.join(root, f)
-            arc = os.path.relpath(full, 'davetv-app').replace('\\', '/')
-            z.write(full, arc)
-```
+| Model | Series | Tizen | Status |
+|-------|--------|-------|--------|
+| QN85Q7FAAFXZA | 85" QLED Q7 | 4.0 | ✅ Tested |
+| QN95Q7FAAFXZA | 95" QLED Q7 | 4.0 | ✅ Tested |
+| All Samsung 2016+ | Any | 3.0+ | ✅ Supported |
 
 ---
 
-<div align="center">
-
-**DaveTV** · Samsung Tizen IPTV Player · Built on IPTV Player Zero
-
-[GitHub](https://github.com/Ghenghis/DaveTV) · [Project Page](https://ghenghis.github.io/DaveTV/) · [Install Guide](#installation)
-
-</div>
+<!-- FOOTER WAVE -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f1218,50:1a2040,100:0f1218&height=120&section=footer&text=DaveTV%20%C2%B7%20Built%20with%20%E2%9D%A4%EF%B8%8F%20for%20Samsung%20TV&fontSize=16&fontColor=56d2f1&fontAlignY=65&animation=fadeIn" width="100%"/>
